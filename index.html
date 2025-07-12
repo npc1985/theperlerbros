@@ -149,7 +149,7 @@
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            padding: 40px;
+            overflow: hidden;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -158,6 +158,17 @@
 
         .character-card:hover {
             transform: translateY(-4px);
+        }
+
+        .character-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .character-content {
+            padding: 30px;
         }
 
         .character-card h3 {
@@ -561,7 +572,7 @@
                 </div>
 
                 <div class="creation-card" data-category="mobs">
-                    <img src="images/cat4.png" alt="Orange Cat">
+                    <img src="images/cat2.png" alt="Orange Cat">
                     <div class="card-content">
                         <h3 class="card-title">Orange Cat</h3>
                         <p class="card-description">A beautiful orange cat variation with detailed markings.</p>
@@ -570,7 +581,7 @@
                 </div>
 
                 <div class="creation-card" data-category="mobs">
-                    <img src="images/cat5.png" alt="Tabby Cat">
+                    <img src="images/cat3.png" alt="Tabby Cat">
                     <div class="card-content">
                         <h3 class="card-title">Tabby Cat</h3>
                         <p class="card-description">Striped tabby cat with intricate pattern work.</p>
@@ -631,22 +642,25 @@
             <h2 class="section-title">Meet The Perler Bros</h2>
             <div class="about-grid">
                 <div class="character-card">
-                    <span class="character-emoji">🌊</span>
-                    <h3>Farwater</h3>
-                    <p>One half of the Perler Bros duo! Farwater brings creativity and precision to every build. Known for attention to detail and innovative character designs. When not crafting with perler beads, he's exploring new Minecraft worlds and dreaming up the next amazing creation.</p>
-                    <img src="images/farwater.png" alt="Foxman Character">
+                    <img src="images/farwater.png" alt="Farwater Character" class="character-image">
+                    <div class="character-content">
+                        <h3>Farwater</h3>
+                        <p>One half of the Perler Bros duo! Farwater brings creativity and precision to every build. Known for attention to detail and innovative character designs. When not crafting with perler beads, he's exploring new Minecraft worlds and dreaming up the next amazing creation.</p>
+                    </div>
                 </div>
                 <div class="character-card">
-                    <span class="character-emoji">🦊</span>
-                    <h3>Foxman</h3>
-                    <p>The other half of the dynamic Perler Bros team! Foxman combines technical skill with artistic vision. His clever designs and problem-solving approach make every project special. He loves experimenting with new techniques and pushing the boundaries of what's possible with perler beads.</p>
-                    <img src="images/foxman.png" alt="Foxman Character">
+                    <img src="images/foxman.png" alt="Foxman Character" class="character-image">
+                    <div class="character-content">
+                        <h3>Foxman</h3>
+                        <p>The other half of the dynamic Perler Bros team! Foxman combines technical skill with artistic vision. His clever designs and problem-solving approach make every project special. He loves experimenting with new techniques and pushing the boundaries of what's possible with perler beads.</p>
+                    </div>
                 </div>
                 <div class="character-card">
-                    <span class="character-emoji">🧀</span>
-                    <h3>Cheesemoe</h3>
-                    <p>Where's the cheese dude!</p>
-                    <img src="images/cheesemoe.png" alt="Foxman Character">
+                    <img src="images/cheesemoe.png" alt="Cheesemoe Character" class="character-image">
+                    <div class="character-content">
+                        <h3>Cheesemoe</h3>
+                        <p>Where's the cheese dude!</p>
+                    </div>
                 </div>
             </div>
             <div style="margin-top: 60px; text-align: center; color: #5a6c7d; font-size: 1.1em; line-height: 1.6;">
